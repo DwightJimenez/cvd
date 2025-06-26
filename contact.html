@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Creative Visual Design (CVD) is a platform for showcasing creative coding projects and visual designs."
+    />
+    <title>Creative Visual Design - Contact</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="icon" href="./favicon.ico" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="navbar">
+          <a href="#">
+            <div class="navbar__logo">
+              <img
+                src="./img/Brand.png"
+                alt="CVD Logo"
+                class="navbar__logo__image"
+              />
+              <span class="navbar__logo__title"
+                >Creative <span>Visual</span> Designs</span
+              >
+            </div>
+          </a>
+          <nav class="navbar__nav">
+            <ul class="navbar__nav__list">
+              <li class="navbar__nav__list__item">
+                <a href="index.html">Home</a>
+              </li>
+              <li class="navbar__nav__list__item">
+                <a href="about.html">About</a>
+              </li>
+              <li
+                class="navbar__nav__list__item navbar__nav__list__item--active"
+              >
+                <a href="#">Services</a>
+              </li>
+              <li class="navbar__nav__list__item">
+                <a href="update.html">Updates</a>
+              </li>
+              <li class="navbar__nav__list__item">
+                <a href="contact.html">Contact</a>
+              </li>
+            </ul>
+          </nav>
+          <button class="navbar__burger-button">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <section class="contact">
+      <div class="container">
+        <h1>Contact</h1>
+        <div class="contact__wrapper">
+          <div class="contact__info">
+            <p class="services-page__description">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magnam
+              vel ullam, at quae molestiae numquam?
+            </p>
+            <ul>
+              <li>
+                <i class="fa-solid fa-phone-flip fa-2x"></i>
+                <p>+63 987 654 3210</p>
+              </li>
+              <li>
+                <i class="fa-solid fa-envelope fa-2x"></i>
+                <p>inquire@creativevisualdesigns.com</p>
+              </li>
+              <li>
+                <i class="fa-solid fa-magnifying-glass fa-2x"></i>
+                <p>
+                  Baloc Road, Brgy San ignacio San Pablo City<br />
+                  Laguna 4000
+                </p>
+              </li>
+            </ul>
+            <br>
+            <br>
+            <div class="about-me__social-media-list about-me__social-media-list--light">
+              <ul>
+                <li>
+                  <a href="#"> <i class="fa-brands fa-facebook fa-2x"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-youtube fa-2x"></i></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="contact__form">
+            <form action="#" method="POST" class="contact__form__inner">
+              <input
+                type="text"
+                id="name"
+                name="name"
+                required
+                placeholder="NAME"
+              />
+
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="EMAIL"
+              />
+
+              <textarea
+                id="message"
+                name="message"
+                rows="6"
+                required
+                placeholder="MESSAGE"
+              ></textarea>
+              <span>
+                <button type="submit" class="btn btn--primary">
+                  Send Message
+                </button>
+              </span>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="container">
+        <div class="footer">
+          <div class="footer__contact">
+            <div class="footer__social-media-list">
+              <ul>
+                <li>
+                  <a href="#"> <i class="fa-brands fa-facebook fa-2x"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-twitter fa-2x"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-brands fa-youtube fa-2x"></i></a>
+                </li>
+                <li>
+                  <a href="#"><i class="fa-solid fa-envelope fa-2x"></i></a>
+                </li>
+              </ul>
+            </div>
+            <div class="footer__office-address">
+              <p>Baloc Road, brgy san ignacio San Pablo city, Laguna 4000</p>
+            </div>
+          </div>
+          <div class="footer__trademark">
+            <p>&copy;CREATIVEVISUALDESIGNS 2025</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script>
+      const burgerButton = document.querySelector(".navbar__burger-button");
+      const nav = document.querySelector(".navbar__nav");
+      const body = document.body;
+
+      burgerButton.addEventListener("click", () => {
+        burgerButton.classList.toggle("open");
+        nav.classList.toggle("open");
+        body.classList.toggle("no-scroll");
+      });
+    </script>
+  </body>
+</html>

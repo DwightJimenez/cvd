@@ -436,6 +436,8 @@ footer {
   color: var(--clr-gray);
 }
 
+
+
 /* Break point desktop first */
 @media (max-width: 1200px) {
   .banner__wrapper {
@@ -547,6 +549,9 @@ footer {
   .services-page__title h1 {
     text-align: center !important;
   }
+  .services-page__title {
+    width: 100% !important;
+  }
 }
 /* small tablet 76.8rem*/
 @media (max-width: 768px) {
@@ -576,6 +581,9 @@ footer {
 }
 .about-me__social-media-list ul li a i {
   color: var(--clr-primary);
+}
+.about-me__social-media-list--light ul li a i {
+  color: var(--clr-light);
 }
 .about-me__wrapper {
   display: grid;
@@ -678,4 +686,53 @@ section.services-page:nth-child(odd) {
 .services-page__price {
   direction: ltr;
   align-items: left;
+}
+
+/* Contact  */
+.contact {
+  padding: 11rem 0;
+  background-color: var(--clr-dark);
+  color: var(--clr-light);
+}
+
+.contact__wrapper {
+  display: grid;
+  grid-template-columns: 1fr 1.8fr;
+  gap: 8rem;
+  align-items: baseline;
+  font-weight: 300;
+}
+.contact__form__inner {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+.contact__form__inner input,
+textarea {
+  padding: 2rem;
+}
+.contact__form__inner span {
+  direction: rtl;
+}
+.contact h1 {
+  font-size: 4.5rem;
+  color: var(--clr-primary);
+  line-height: 7.5rem;
+  font-weight: 700;
+  margin-bottom: 4rem;
+}
+.contact__info ul li i {
+  margin-bottom: 4rem;
+}
+.contact__info ul li {
+  color: var(--clr-primary);
+  display: flex;
+  justify-item: center;
+}
+.contact__info ul li p {
+  margin-left: 4rem;
+  justify-content: center;
+  color: var(--clr-light);
+  font-weight: 300;
+  width: 364.283px;
 }

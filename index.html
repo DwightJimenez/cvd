@@ -42,7 +42,7 @@
                 <a href="about.html">About</a>
               </li>
               <li class="navbar__nav__list__item">
-                <a href="#">Services</a>
+                <a href="services.html">Services</a>
               </li>
               <li class="navbar__nav__list__item">
                 <a href="#">Updates</a>
@@ -235,10 +235,12 @@
     <script>
       const burgerButton = document.querySelector(".navbar__burger-button");
       const nav = document.querySelector(".navbar__nav");
+      const body = document.body;
 
       burgerButton.addEventListener("click", () => {
         burgerButton.classList.toggle("open");
         nav.classList.toggle("open");
+        body.classList.toggle("no-scroll");
       });
     </script>
   </body>
